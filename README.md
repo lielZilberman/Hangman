@@ -20,6 +20,7 @@ If too many letters which do not appear in the word are guessed, the player is h
 Have fun! 
 
 
+![hangman](https://user-images.githubusercontent.com/93929255/178794719-b5be7281-b563-467e-a0ee-ed76d116f849.png)
 
 
 
