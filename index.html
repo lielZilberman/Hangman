@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hangman</title>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- <img class="pic" src="hangman.png" alt="hangpic" /> -->
+    <div class="first">
+      <h1 class="Welcome">Hangman</h1>
+      <h2 class="topic hidden"></h2>
+      <h2 id="line-container">Line Container:</h2>
+    </div>
+    <div class="hangman">
+      <div class="h" id="g1"></div>
+      <div class="h" id="g2"></div>
+      <div class="h" id="g3"></div>
+      <div class="h" id="g4"></div>
+      <div class="h" id="g5"></div>
+      <div class="h" id="g6"></div>
+      <div class="h" id="g7"></div>
+      <div class="h" id="g8"></div>
+      <div class="h" id="g9"></div>
+      <div class="h" id="g10"></div>
+    </div>
+    <div class="modal hidden">
+      <button class="again">Play again!</button>
+      <label class="outcome win hidden">WELL DONE! </label>
+      <label class="outcome lose hidden">YOU LOST!</label>
+      <label class="outcome word"></label>
+    </div>
+    <div class="overlay hidden"></div>
+    <button class="btns animals">animals</button>
+    <button class="btns countries">countries</button>
+    <button class="btns food">food</button>
+    <!-- <img class="pic" src="hangman.png" alt="hangpic" /> -->
+  </body>
+</html>

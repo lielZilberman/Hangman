@@ -1,0 +1,288 @@
+body {
+  overflow: hidden; /* Hide scrollbars */
+  background-color: rgb(176, 204, 231);
+}
+
+.first {
+  font-family: cursive;
+  color: rgb(49, 133, 10);
+}
+
+.Welcome {
+  position: relative;
+  left: 655px;
+
+  font-size: 50px;
+}
+
+#line-container {
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  top: 300px;
+  left: 250px;
+  opacity: 0;
+}
+
+.topic {
+  background-color: rgb(135, 182, 226);
+  border: 5px solid #444;
+  width: 120px;
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+  position: relative;
+  left: 670px;
+  top: 50px;
+  font-size: 30px;
+}
+
+.letter {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+}
+
+.btns {
+  position: relative;
+  left: 570px;
+  bottom: 400px;
+  border-color: rgb(49, 133, 10);
+  padding: 0.6em 2.3em;
+  cursor: pointer;
+  font-size: 1em;
+  color: rgb(49, 133, 10);
+  background-color: rgb(176, 204, 231);
+  background-image: linear-gradient(45deg, transparent 50%, #000000 50%);
+  background-position: 25%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
+  transition: background 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.btns:hover {
+  color: #ffffff;
+  background-position: 100%;
+}
+
+.abcbtn {
+  position: relative;
+  bottom: 400px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(5, 1, 1);
+  background-color: rgb(135, 182, 226);
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.abcbtn {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.abcbtn:hover {
+  border-color: red;
+  border-radius: 50%;
+}
+
+.line {
+  position: relative;
+  height: 2px;
+  width: 30px;
+  background: black;
+  margin: 1em 0 0 1em;
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.false {
+  background-color: red;
+}
+
+.true {
+  background-color: rgb(49, 133, 10);
+  border: rgb(49, 133, 10);
+}
+
+.hangman {
+  position: relative;
+  top: 350px;
+  left: 1200px;
+}
+
+#g1 {
+  height: 4px;
+  width: 90px;
+  background: black;
+  opacity: 0;
+}
+
+#g2 {
+  position: relative;
+  bottom: 200px;
+  left: 45px;
+  height: 200px;
+  width: 4px;
+  background: black;
+  opacity: 0;
+}
+
+#g3 {
+  position: relative;
+  bottom: 400px;
+  left: 45px;
+  height: 4px;
+  width: 70px;
+  background: black;
+  opacity: 0;
+}
+
+#g4 {
+  position: relative;
+  bottom: 400px;
+  left: 95px;
+  height: 30px;
+  width: 3px;
+  background: black;
+  opacity: 0;
+}
+
+#g5 {
+  position: relative;
+  bottom: 400px;
+  left: 82px;
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+#g6 {
+  position: relative;
+  bottom: 400px;
+  left: 95px;
+  width: 3px;
+  height: 50px;
+  background: black;
+  opacity: 0;
+}
+
+#g7 {
+  position: relative;
+  bottom: 405px;
+  left: 85px;
+  width: 3px;
+  height: 30px;
+  background: black;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+#g8 {
+  position: relative;
+  bottom: 435px;
+  left: 105px;
+  width: 3px;
+  height: 30px;
+  background: black;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+#g9 {
+  position: relative;
+  bottom: 505px;
+  left: 85px;
+  width: 3px;
+  height: 30px;
+  background: black;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+#g10 {
+  position: relative;
+  bottom: 535px;
+  left: 105px;
+  width: 3px;
+  height: 30px;
+  background: black;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.outcome {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: cursive;
+  color: rgb(49, 133, 10);
+}
+
+.word {
+  position: relative;
+  left: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.again {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 900px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  transition-duration: 0.4s;
+  border-radius: 50%;
+  font-family: cursive;
+  color: rgb(49, 133, 10);
+  cursor: pointer;
+}
+.again:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pic {
+  opacity: 0;
+}
